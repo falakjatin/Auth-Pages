@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Auth',
-  description: 'Welcome to todo list app',
+  title: 'Auth-Pages',
+  description: 'Auth pages with theme switch',
 }
 
 const AuthLayout = ({

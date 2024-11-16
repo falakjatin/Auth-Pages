@@ -1,9 +1,9 @@
 export const metadata = {
-  title: 'Register',
+  title: 'Dashboard',
   description: 'Auth pages with theme switch',
 }
 
-const RegistrationLayout = ({
+const DashboardLayout = ({
   children,
 }: {
   children: React.ReactNode
@@ -11,4 +11,4 @@ const RegistrationLayout = ({
   return children
 }
 
-export default RegistrationLayout
+export default DashboardLayout

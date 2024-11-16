@@ -6,8 +6,8 @@ import Header from '@components/Header'
 import '@styles/globals.css'
 
 export const metadata = {
-  title: 'Todo List',
-  description: 'Welcome to todo list app',
+  title: 'Auth-Pages',
+  description: 'Auth pages with theme switch',
 }
 
 const RootLayout = ({

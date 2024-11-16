@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Login',
-  description: 'Welcome to todo list app',
+  description: 'Auth pages with theme switch',
 }
 
 const LoginLayout = ({
