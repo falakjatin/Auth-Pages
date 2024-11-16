@@ -45,7 +45,7 @@ const Login = () => {
                             error={errors.password}
                             type='password'
                         />
-                        <Button className='w-full' title='Login' onClick={handleSubmit} />
+                        <Button type='submit' className='w-full' title='Login' onClick={handleSubmit} />
                         {/* <Button title='Login' onClick={() => {
                             alert('button')
                             setUserData({ f_name: 'abcd', l_name: 'xyz', u_name: 'q123', u_id: 1 })
@@ -53,7 +53,7 @@ const Login = () => {
                     </>
                 )}
             </Formik>
-            <p className='my-4'>Don&apos;t have an account <Link href='/register' className='text-sky-600 dark:text-sky-200'>Register Here</Link></p>
+            <p className='my-4'>Don&apos;t have an account? <Link href='/register' className='text-sky-600 dark:text-sky-200 underline'>Register Here</Link></p>
             <hr className='my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-sky-600 to-transparent opacity-25 dark:opacity-100' />
             <SocialBtns className='grid grid-cols-3 gap-x-2' />
         </div>

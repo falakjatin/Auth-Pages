@@ -21,7 +21,7 @@
   --loaderOpacity: 0 0 1rem rgba(2, 132, 199, 0.75);
 }
 
-button,
+button, [type='button'], [type='reset'], [type='submit'],
 .link-button {
   background-color: theme(colors.blue.700);
   color: theme(colors.slate.50);
