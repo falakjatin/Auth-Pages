@@ -6,9 +6,13 @@ export default yup.object({
         .required('Password is required.')
         .matches(
             /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
-            `
-            Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character
-            `,
+            `\t• Contains 1 Upper case letter
+                                \t• Contains 1 Lower case letter
+                                \t• Contains 1 number
+                                \t• Contains 1 special character
+                                \t• No space
+                                \t• Minimum 8 character are required`
+            ,
         ),
     reTypePassword: yup.string()
         .test('passwords-match', 'Passwords must match', function (value) {

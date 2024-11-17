@@ -15,7 +15,7 @@ const Input = ({
                     className={`w-full rounded-full p-2 pl-4 bg-slate-50 bg-[#fff] border-2 dark:bg-slate-900 ${error ? 'border-red-500' : 'dark:border-transparent'}` + inputStyle}
                     {...props} />
             </label>
-            <span className={'text-red-500 pl-2' + errorStyle}>{error}</span>
+            <span className={'text-red-500 pl-2 whitespace-pre-line' + errorStyle}>{error}</span>
         </div>
     )
 }

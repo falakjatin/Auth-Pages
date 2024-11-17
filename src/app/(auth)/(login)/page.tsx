@@ -24,7 +24,7 @@ const Login = () => {
         <div>
             <p>Login</p>
             <Formik
-                initialValues={{ username: '', password: '' }}
+                initialValues={{ email: '', password: '' }}
                 validationSchema={validations}
                 validateOnChange={false}
                 validateOnBlur={true}
@@ -33,10 +33,10 @@ const Login = () => {
                 {({ handleChange, handleSubmit, values, errors }) => (
                     <>
                         <Input
-                            placeholder='Username'
-                            onChange={handleChange('username')}
-                            value={values.username}
-                            error={errors.username}
+                            placeholder='Email'
+                            onChange={handleChange('email')}
+                            value={values.email}
+                            error={errors.email}
                         />
                         <Input
                             placeholder='Password'
@@ -63,6 +63,6 @@ const Login = () => {
 export default Login
 
 interface onSubmit {
-    username: string,
+    email: string,
     password: string,
 }
